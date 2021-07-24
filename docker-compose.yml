@@ -1,0 +1,13 @@
+version: '2'
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile-mysql
+    image: mysql-shm:5.6.38
+    container_name: mysql-shm
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysecret
+    ports:
+     - "3306:3306"
+ 

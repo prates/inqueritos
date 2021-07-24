@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title> Create inquerito </title>
+</head>
+
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.vitima.label }} <br>
+        {{ form.vitima(size=50)  }}
+    </p>
+    <p>
+        {{ form.bandido.label }} <br>
+        {{ form.bandido(size=50) }}
+    </p>
+    <p>
+        {{ form.data_inquerito.label }} <br>
+        {{ form.data_inquerito(size=15) }}
+    </p>
+    <p>
+        {{ form.submit() }}
+</form>
+
+</html>
